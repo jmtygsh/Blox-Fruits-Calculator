@@ -14,6 +14,8 @@
 ## Reverb Web Socket
 - php artisan reverb:start --debug  (Development)
 - php artisan reverb:start (Production)
+- sudo netstat -tuln | grep 8080  (Check if already runing)
+
 
 ##  For Queue Listen 
 - php artisan queue:listen
