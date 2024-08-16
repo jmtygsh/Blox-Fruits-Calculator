@@ -7,18 +7,22 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## upload image on local server
+## To Link Storage 
+php artisan storage:link 
+Storage much be link to upload images to local public/storage/
 
-php artisan storage:link
+## Reverb Web Socket
+php artisan reverb:start --debug  (Development)
+php artisan websockets:serve (Production)
 
-If you are going to upload image on local server then much create storge.
+##  For Queue Listen 
+php artisan queue:listen
 
+## Web server 
+sudo systemctl start nginx (Production) 
+sudo systemctl enable nginx  (Production) #To start Nginx automatically on boot
 
-## php artisan reverb:start --debug  
-For reverb 
-
-## php artisan queue:listen
-For reverb Frontend listener 
+php artisan serve (Developement)
 
 
 ## About Laravel
