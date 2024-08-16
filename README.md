@@ -8,8 +8,8 @@
 </p>
 
 ## To Link Storage 
--php artisan storage:link 
--Storage much be link to upload images to local public/storage/
+- php artisan storage:link 
+- Storage much be link to upload images to local public/storage/
 
 ## Reverb Web Socket
 -php artisan reverb:start --debug  (Development)
