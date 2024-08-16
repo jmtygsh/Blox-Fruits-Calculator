@@ -13,7 +13,7 @@
 
 ## Reverb Web Socket
 - php artisan reverb:start --debug  (Development)
-- php artisan websockets:serve (Production)
+- php artisan reverb:start (Production)
 
 ##  For Queue Listen 
 - php artisan queue:listen
