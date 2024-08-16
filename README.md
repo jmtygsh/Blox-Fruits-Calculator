@@ -8,21 +8,21 @@
 </p>
 
 ## To Link Storage 
-php artisan storage:link 
-Storage much be link to upload images to local public/storage/
+-php artisan storage:link 
+-Storage much be link to upload images to local public/storage/
 
 ## Reverb Web Socket
-php artisan reverb:start --debug  (Development)
-php artisan websockets:serve (Production)
+-php artisan reverb:start --debug  (Development)
+-php artisan websockets:serve (Production)
 
 ##  For Queue Listen 
-php artisan queue:listen
+-php artisan queue:listen
 
 ## Web server 
-sudo systemctl start nginx (Production) 
-sudo systemctl enable nginx  (Production) #To start Nginx automatically on boot
+-sudo systemctl start nginx (Production) 
+-sudo systemctl enable nginx  (Production) #To start Nginx automatically on boot
 
-php artisan serve (Developement)
+-php artisan serve (Developement)
 
 
 ## About Laravel
