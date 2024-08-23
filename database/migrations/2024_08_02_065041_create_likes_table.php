@@ -13,16 +13,15 @@ return new class extends Migration
     {
         Schema::create('likes', function (Blueprint $table) {
             $table->id();
-            $table->string('ip_address'); // to store the user's public IP address
-            $table->string('state')->nullable(); // to store the user's state
-            $table->string('country')->nullable(); // to store the user's country
-            $table->string('user_agent'); // to store the user's browser or device information
+            $table->string('ip_address', 45); // IPv4 or IPv6 address
+            $table->string('state', 50)->nullable(); // Limit the length of state
+            $table->string('country', 50)->nullable(); // Limit the length of country
+            $table->string('user_agent', 255); // Limit the length of user agent
             $table->timestamps();
-        
-            // Ensure a user can only like once based on IP address, user agent, state, and country
-            $table->unique(['ip_address', 'user_agent', 'state', 'country']);
+
+            // Use a prefix length for each column in the unique index
+            $table->unique(['ip_address', 'user_agent', 'state', 'country'], 'likes_unique');
         });
-        
     }
 
     /**
